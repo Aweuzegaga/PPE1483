@@ -1,4 +1,5 @@
 <?php
+//pour pouvoir commit
 //pour que la réponse s'affiche comme du texte brut
 header('Content-Type: text/plain');
  
