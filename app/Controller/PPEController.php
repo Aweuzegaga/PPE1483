@@ -13,7 +13,7 @@ App::uses('AppController', 'Controller');
  *
  * @author Philippe
  */
-class PPEController {
+class PPEController extends AppController {
        /**
      * index method : first page
      *
@@ -21,6 +21,6 @@ class PPEController {
      */
     public function index()
     {
-        die('test');
+       //die('test');
     }
 }
