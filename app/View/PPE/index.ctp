@@ -4,7 +4,7 @@
 header('Content-Type: text/plain');
  
 /*partie à modifier*/
-$name = 'www.perdu.com';//nom du site
+$name = 'my.zipato.com/zipato-web/app2login';//nom du site
  
 //pour ne pas devoir calculer à la main la longueur du corps, on le stocke dans une variable et la fonction strlen() nous la donne.
 $data = 'variable=valeur&variable2=valeur2';

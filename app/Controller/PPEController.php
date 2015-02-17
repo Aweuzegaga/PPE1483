@@ -23,4 +23,8 @@ class PPEController extends AppController {
     {
        //die('test');
     }
+    
+    public function accueil(){
+        
+    }
 }
