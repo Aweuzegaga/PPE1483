@@ -39,12 +39,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<div id="container">
 		
                     <div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
                         <?php echo $this->Html->link('Accueil', array('controller' => 'Ppe', 'action' => 'accueil')); ?>
                         <?php echo $this->Html->link('Affichage graphique', array('controller' => 'Ppe', 'action' => 'affichage_graphique')); ?>
                         <?php echo $this->Html->link('Informations de la Box', array('controller' => 'Ppe', 'action' => 'box')); ?>
                         <?php echo $this->Html->link('Profil', array('controller' => 'Ppe', 'action' => 'profil')); ?>
-		 <?php echo $this->Html->link('log out', array('controller' => 'Ppe', 'action' => 'log out')); ?>
+		 <?php echo $this->Html->link('Deconnexion', array('controller' => 'Ppe', 'action' => 'log out')); ?>
 		</div>
 		
 		<div id="content">
@@ -60,9 +59,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
 				);
 			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
+                    <p>
+                        Mathieu Coche, Robin Jolivet, Thomas Cousin, Cynthia Chretien, Maugeri Margaux 
+                    </p>
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
