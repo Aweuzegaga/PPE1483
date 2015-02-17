@@ -47,9 +47,5 @@ class PpeController extends AppController
     {
         
     }
-    
-    public function accueil(){
-        
-    }
 }
 ?>
