@@ -1,0 +1,24 @@
+#login{
+	width: 970px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-bottom: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 90px;
+	
+	width: 400px;
+}
+
+#loghead{
+	text-align: center;
+
+}
+
+body{
+	background-image: url('../img/pagefond.jpg');
+	background-repeat: no-repeat;
+	background-attachment : fixed;
+	background-position: center center;
+	background-size: cover;
+}
