@@ -1,3 +1,4 @@
+<?php $this->assign('title', 'Profil');?>
 <?php
 
 /* 

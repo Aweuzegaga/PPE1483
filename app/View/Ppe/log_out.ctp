@@ -1,3 +1,4 @@
+<?php $this->assign('title', 'log out');?>
 <?php
 
 /* 

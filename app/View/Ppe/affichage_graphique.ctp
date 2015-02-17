@@ -1,3 +1,4 @@
+<?php $this->assign('title', 'Affichage graphique');?>
 <?php
 
 /* 
