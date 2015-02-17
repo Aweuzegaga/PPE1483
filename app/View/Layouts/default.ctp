@@ -43,7 +43,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                         <?php echo $this->Html->link('Affichage graphique', array('controller' => 'Ppe', 'action' => 'affichage_graphique')); ?>
                         <?php echo $this->Html->link('Informations de la Box', array('controller' => 'Ppe', 'action' => 'box')); ?>
                         <?php echo $this->Html->link('Profil', array('controller' => 'Ppe', 'action' => 'profil')); ?>
-		 <?php echo $this->Html->link('Deconnexion', array('controller' => 'Ppe', 'action' => 'log out')); ?>
+		 <?php echo $this->Html->link('Deconnexion', array('controller' => 'Ppe', 'action' => 'log_out')); ?>
 		</div>
 		
 		<div id="content">

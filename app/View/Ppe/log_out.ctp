@@ -1,4 +1,4 @@
-<?php $this->assign('title', 'log out');?>
+<?php $this->assign('title', 'log_out');?>
 <?php
 
 /* 
