@@ -13,7 +13,7 @@ $donnees3 = array();
 
 foreach($raw as $data){
     
-    if ($data['Mesure']['uuidEquipement'] == '954b15e0-de1c-4b88-baab-cfa0dc57bee8') {
+    if (($data['Mesure']['uuidEquipement'] == '4cb2c8a1-0bc2-4a24-bbdc-0dab21142bef') && ($data['Mesure']['idEquipement']) == '96') {
         
         
 	$datetime1 = strtotime($data['Mesure']['date']);
@@ -23,7 +23,7 @@ foreach($raw as $data){
     }
     
         
-    if (($data['Mesure']['uuidEquipement'] == '11d2f856-4159-444d-a2aa-9aec68c1579a') && ($data['Mesure']['idEquipement']) == '95') {
+    if (($data['Mesure']['uuidEquipement'] == '4cb2c8a1-0bc2-4a24-bbdc-0dab21142bef') && ($data['Mesure']['idEquipement']) == '95') {
                  
 	
 	$datetime1 = strtotime($data['Mesure']['date']);
@@ -32,7 +32,7 @@ foreach($raw as $data){
 	$donnees2[] = "[$datetime1, $valeur]"; 	
     }
         
-    if (($data['Mesure']['uuidEquipement'] == '11d2f856-4159-444d-a2aa-9aec68c1579a') && ($data['Mesure']['idEquipement']) == '97') { 
+    if (($data['Mesure']['uuidEquipement'] == '3ed9fee0-9704-4072-ae8c-526d7f6c915e') && ($data['Mesure']['idEquipement']) == '7') { 
         
             
             $datetime1 = strtotime($data['Mesure']['date']);
@@ -112,7 +112,7 @@ foreach($raw as $data){
                 },*/
                 series: [{
                     name: 'humidite',
-                    data: [<?php echo join($donnees3, ',') ?>]
+                    data: [<?php echo join($donnees, ',') ?>]
                 }]
             });
         });         

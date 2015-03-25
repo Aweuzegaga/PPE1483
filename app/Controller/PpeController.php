@@ -14,6 +14,8 @@ class PpeController extends AppController {
         
         date_default_timezone_set('Europe/Paris');
         $url = 'http://my.zipato.com:8080/zipato-web/json/Initialize';
+        //$username = 'renaudat@ece';
+        //$password = 'DHOME2015.';
         $username = 'mathieu.yahiko@gmail.com';
         $password = 'PPE1483';
 
