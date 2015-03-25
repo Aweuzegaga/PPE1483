@@ -14,8 +14,8 @@ class PpeController extends AppController {
         
         date_default_timezone_set('Europe/Paris');
         $url = 'http://my.zipato.com:8080/zipato-web/json/Initialize';
-        $username = 'renaudat@ece.fr';
-        $password = 'DHOME2015.';
+        $username = 'mathieu.yahiko@gmail.com';
+        $password = 'PPE1483';
 
         $json = json_decode(file_get_contents($url));
         $sid = 'jsessionid';
@@ -110,6 +110,10 @@ class PpeController extends AppController {
             }
             //$this->playerid = $this->Log->checklogin($this);
         }
+    }
+    
+    public function traitement(){
+        
     }
     
 
