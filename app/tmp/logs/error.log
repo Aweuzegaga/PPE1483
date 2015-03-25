@@ -696,3 +696,476 @@ Request URL: /PPE1483/css/webarena.css
 Stack Trace:
 #0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-03-25 13:58:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/getValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(70): Mesure->createMesure('2015-03-25 13:5...', '2.0', '3ed9fee0-9704-4...', 77)
+#7 [internal function]: PpeController->getValues()
+#8 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#9 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-25 13:58:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(70): Mesure->createMesure('2015-03-25 13:5...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(77): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 13:58:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(70): Mesure->createMesure('2015-03-25 13:5...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(77): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:00:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/bootstrap-social.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:00:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/webarena.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:00:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/font-awesome.min.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:00:09 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/dist/css/bootstrap.min.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:00:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/js/facebook.js
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:00:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/js/webarena.js
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:00:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/getValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 [internal function]: PpeController->getValues()
+#8 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#9 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-25 14:00:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(79): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:04:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(79): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:04:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(79): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:06:11 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '2.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(79): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:06:21 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(79): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:06:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(79): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:07:43 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/dist/css/bootstrap.min.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:07:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/bootstrap-social.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:07:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/js/facebook.js
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:07:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/font-awesome.min.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:07:43 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/js/webarena.js
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:07:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/webarena.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:08:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(79): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:08:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/getValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:0...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 [internal function]: PpeController->getValues()
+#8 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#9 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-25 14:15:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/getValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:1...', '1.0', '3ed9fee0-9704-4...', 77)
+#7 [internal function]: PpeController->getValues()
+#8 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#9 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-25 14:23:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/bootstrap-social.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:23:55 Error: [MissingControllerException] Controller class DistController could not be found.
+Exception Attributes: array (
+  'class' => 'DistController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/dist/css/bootstrap.min.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:23:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/font-awesome.min.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:23:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/js/facebook.js
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:23:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/webarena.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:23:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/js/webarena.js
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:24:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/getValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:2...', '228.0', '4cb2c8a1-0bc2-4...', 97)
+#7 [internal function]: PpeController->getValues()
+#8 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#9 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-25 14:24:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:2...', '228.0', '4cb2c8a1-0bc2-4...', 97)
+#7 C:\wamp\www\PPE1483\app\Controller\PpeController.php(79): PpeController->getValues()
+#8 [internal function]: PpeController->showValues()
+#9 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#12 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-03-25 14:24:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ppe`.`mesures`, CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`uuidEquipement`, `idEquipement`) REFERENCES `equipements` (`uuid`, `id`) ON DELETE SET NULL ON UPDATE SET NULL)
+Request URL: /PPE1483/Ppe/getValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `pp...', Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `pp...')
+#3 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1928): DboSource->create(Object(Mesure), Array, Array)
+#4 C:\wamp\www\PPE1483\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\wamp\www\PPE1483\app\Model\Mesure.php(24): Model->save(Array)
+#6 C:\wamp\www\PPE1483\app\Controller\PpeController.php(72): Mesure->createMesure('2015-03-25 14:2...', '228.0', '4cb2c8a1-0bc2-4...', 97)
+#7 [internal function]: PpeController->getValues()
+#8 C:\wamp\www\PPE1483\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PpeController), Array)
+#9 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\wamp\www\PPE1483\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PpeController), Object(CakeRequest))
+#11 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-03-25 14:28:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/font-awesome.min.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:28:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/bootstrap-social.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:28:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/js/facebook.js
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:28:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/js/webarena.js
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:28:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /PPE1483/css/webarena.css
+Stack Trace:
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
