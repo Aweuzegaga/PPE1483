@@ -40,7 +40,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		
                     <div id="header">
                         <?php echo $this->Html->link('Accueil', array('controller' => 'Ppe', 'action' => 'accueil')); ?>
-                        <?php echo $this->Html->link('Affichage graphique', array('controller' => 'Ppe', 'action' => 'affichage_graphique')); ?>
+                        <?php echo $this->Html->link('Affichage graphique', array('controller' => 'Ppe', 'action' => 'showValues')); ?>
+                        <?php echo $this->Html->link('Récupérer des données', array('controller' => 'Ppe', 'action' => 'getValues')); ?>
                         <?php echo $this->Html->link('Informations de la Box', array('controller' => 'Ppe', 'action' => 'box')); ?>
                         <?php echo $this->Html->link('Profil', array('controller' => 'Ppe', 'action' => 'profil')); ?>
 		 <?php echo $this->Html->link('Deconnexion', array('controller' => 'Ppe', 'action' => 'log_out')); ?>
