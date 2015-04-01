@@ -5,6 +5,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+App::uses('AppModel', 'Model');
+App::uses('Security', 'Utility');
 
 class MailManagement extends AppModel {
 
@@ -41,7 +43,7 @@ class MailManagement extends AppModel {
             return $Email->send();
         }
         else
-        {
+        {   
             return false;
         }
     }

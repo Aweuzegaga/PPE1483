@@ -19,7 +19,7 @@ class LogComponent extends Component {
 
 
             $this->Session->delete('Connected');
-            $this->Controller->redirect(array('controller' => 'Arenas', 'action' => 'index'));
+            $this->Controller->redirect(array('controller' => 'Ppe', 'action' => 'index'));
         }
     }
 
@@ -28,7 +28,7 @@ class LogComponent extends Component {
         $this->Controller = $mycontroller;
         if (!empty($this->Controller->request->data['LoginHeader']))
         {
-            $id = $this->Controller->Player->checkLogin($this->Controller->request->data['LoginHeader']['email'],
+            $id = $this->Controller->User->checkLogin($this->Controller->request->data['LoginHeader']['email'],
                     $this->Controller->request->data['LoginHeader']['password']);
             if (!$id)
             {
@@ -38,14 +38,6 @@ class LogComponent extends Component {
             {
                 //Cette lign doit-être avant sinon mauvaise redirection
                  $this->Session->write('Connected', $id);
-                if (count($this->Controller->Fighter->havePerso($this->Session->read('Connected'))) == 0)
-                {
-                    $this->Controller->redirect(array('controller' => 'Arenas', 'action' => 'createFighter'));
-                } else
-                {
-                    $this->Controller->redirect(array('controller' => 'Arenas', 'action' => 'fighter'));
-                }
-               
               
             }
         }

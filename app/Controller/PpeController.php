@@ -1,54 +1,114 @@
 <?php
 
 App::uses('AppController', 'Controller');
-
+App::uses('File', 'Utility');
+App::uses('CakeEmail', 'Network/Email');
 /* 
 Controller qui va s'occuper de récupérer les données depuis la box
  */
 
 class PpeController extends AppController {
     
-    public $uses = array('Mesure');
-    
-    public function login() {
-        
-        date_default_timezone_set('Europe/Paris');
-        $url = 'http://my.zipato.com:8080/zipato-web/json/Initialize';
-        //$username = 'renaudat@ece';
-        //$password = 'DHOME2015.';
-        $username = 'mathieu.yahiko@gmail.com';
-        $password = 'PPE1483';
-
-        $json = json_decode(file_get_contents($url));
-        $sid = 'jsessionid';
-        $none = 'nonce';
-        
-        global $id;
-        $id = $json->{$sid};
-        $nonce = $json->{$none};
-
-
-
-        $temp = sha1 ($password);
-        $temp2 = $nonce.$temp;
-        $pass = sha1($temp2);
-
-        $data = array("username" => "$username", "password" => "$pass", "method" => "SHA1" );
-        $data_url = "username=$username&password=$pass&method=SHA1";
-
-
-
-        $ch = curl_init('http://my.zipato.com:8080/zipato-web/json/Login');
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-        curl_setopt($ch, CURLOPT_COOKIE, 'JSESSIONID='.$id);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data_url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        
-        $output = curl_exec($ch);
-        
-        return $id;
+    public $uses = array('Mesure', 'User', 'MailManagement');
+    public $components = array('Password', 'Log', 'Session');
+  
+    public function beforeFilter()
+    {
+        //parent::beforeFilter();
+        $this->Auth->allow('index');
+          /*if (!
+                CakeSession::check('name')){
+            
+            $this->redirect(array("controller"=>"Players",
+                            "action"=>"login"));
+        }*/
     }
+    
+    
+     public function index()
+    {
+         $this->set('myname', "Cynthia C"); 
+    }
+    
+    /*public function login()
+    {
+        if ($this->request->is('post')){
+            if(isset($this->request->data['Login'])){
+                $this->User->signUp($this->request->data['Login']['email'],$this->request->data['Login']['password']);  
+            }
+        }
+ 
+    }
+    
+     public function login()
+    {
+         if ($this->request->is('post')) {
+       
+       /* if ($this->Auth->login()) {
+            return $this->redirect($this->Auth->redirect(array('controller' => 'Ppe', 'action' => 'accueil')));
+            
+        }
+        $this->Session->setFlash(
+            __('Username ou password est incorrect'),
+            'default',
+             array(),
+            'auth'
+        );
+    }*/ 
+         
+         /*  if (isset($this->request->data['Login'])) { {
+                    if ($this->User->checkLogin($this->request->data['Login']['email'], $this->request->data['Login']['password'])) {
+                        $this->Session->setflash("Welcome" . $this->request->data['Login']['email']);
+                        $this->redirect(array("controller" => "Ppe","action" => "accueil"));
+                    }
+                }
+            }
+         }
+      
+        /*if ($this->request->is('post'))
+        {
+            if (!empty($this->request->data['Login']))
+            {
+                $id = $this->User->checkLogin($this->request->data['Login']['email'],
+                        $this->request->data['Login']['password']);
+                if (!$id)
+                {
+                    $this->Session->setFlash('Mauvais mot de passe ou email',
+                            'flash/flashdanger');
+                } else
+                {
+                   $this->Auth->login();
+                   $this->Session->write('Connected', $id);
+                   $this->redirect(array('controller' => 'Ppe', 'action' => 'accueil'));
+                   $this->Session->setflash("Welcome" . $this->request->data['Login']['email']);
+                 
+                }
+            }
+            
+           $this->Log->checklogin($this);
+        } 
+    }*/
+    
+    
+    public function logout()
+    {
+        /*if ($this->request->is('post'))
+        {
 
+            if (!empty($this->request->data['Logout']))
+            {
+                $this->Session->delete('Connected');
+                $this->redirect(array('controller' => 'Ppe', 'action' => 'login'));
+            }
+            $this->Log->checklogout($this);
+        }*/
+        
+        CakeSession::destroy();
+        $this->redirect(array("controller"=>"Users",
+                            "action"=>"login"));
+    }
+    
+    
     public function getValues(){
          // On obtiendra la variable de la fonction login car elle y est global
         $id = $this->login();
@@ -80,39 +140,6 @@ class PpeController extends AppController {
         $this->set('raw',$this->Mesure->find('all'));
     }
     
-    public function subscribe(){
-        if ($this->request->is('post'))
-        {
-
-            if (!empty($this->request->data['MailManagement']))
-            {
-                $password = $this->Password->generatePassword();
-                //Création du mail
-                //Si le mail est valide on crée un nouveau compte +envoie de mail sinon e-mail invalide
-
-
-                if ($this->Player->createNew($this->request->data['MailManagement']['email'],
-                                $password))
-                {
-                    if (!$this->MailManagement->sendSubcribingEmail($this->request->data['MailManagement']['email'],
-                                    $password))
-                    {
-                        $this->Session->setFlash('email invalide',
-                                'flash/flashdanger');
-                    } else
-                    {
-                        $this->Session->setFlash('Un email vient de vous être envoyé',
-                                'flash/flashok');
-                    }
-                } else
-                {
-                    $this->Session->setFlash('Cet email existe déjà',
-                            'flash/flashdanger');
-                }
-            }
-            //$this->playerid = $this->Log->checklogin($this);
-        }
-    }
     
     public function traitement(){
         
@@ -124,13 +151,10 @@ class PpeController extends AppController {
      * &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
      * &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
      */
-    public function index()
-    {
-        
-    }
+   
     public function accueil()
     {
-        
+        die('Bienvenu');
     }
     public function affichage_graphique()
     {
@@ -140,14 +164,8 @@ class PpeController extends AppController {
     {
         
     }
-    public function log_in()
-    {
-        
-    }
-    public function log_out()
-    {
-        
-    }
+    
+  
     public function profil()
     {
         
