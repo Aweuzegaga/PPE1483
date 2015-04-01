@@ -1525,6 +1525,7 @@ Request URL: /PPE1483/js/facebook.js
 Stack Trace:
 #0 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+<<<<<<< HEAD
 2015-03-25 15:00:59 Error: [MissingControllerException] Controller class JsController could not be found.
 Exception Attributes: array (
   'class' => 'JsController',
@@ -1782,12 +1783,16 @@ Stack Trace:
 #13 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
 2015-03-25 15:10:11 Error: [MissingControllerException] Controller class CssController could not be found.
+=======
+2015-03-25 14:59:05 Error: [MissingControllerException] Controller class CssController could not be found.
+>>>>>>> c1938d7adb163c68a949c96a183fb3989cc4ca33
 Exception Attributes: array (
   'class' => 'CssController',
   'plugin' => NULL,
 )
 Request URL: /PPE1483/css/font-awesome.min.css
 Stack Trace:
+<<<<<<< HEAD
 #0 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2015-03-25 15:10:11 Error: [MissingControllerException] Controller class CssController could not be found.
@@ -1800,12 +1805,18 @@ Stack Trace:
 #0 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2015-03-25 15:10:16 Error: [MissingControllerException] Controller class CssController could not be found.
+=======
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:59:05 Error: [MissingControllerException] Controller class CssController could not be found.
+>>>>>>> c1938d7adb163c68a949c96a183fb3989cc4ca33
 Exception Attributes: array (
   'class' => 'CssController',
   'plugin' => NULL,
 )
 Request URL: /PPE1483/css/bootstrap-social.css
 Stack Trace:
+<<<<<<< HEAD
 #0 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2015-03-25 15:10:16 Error: [MissingControllerException] Controller class CssController could not be found.
@@ -1863,12 +1874,18 @@ Stack Trace:
 #0 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2015-03-25 15:10:17 Error: [MissingControllerException] Controller class JsController could not be found.
+=======
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-25 14:59:05 Error: [MissingControllerException] Controller class JsController could not be found.
+>>>>>>> c1938d7adb163c68a949c96a183fb3989cc4ca33
 Exception Attributes: array (
   'class' => 'JsController',
   'plugin' => NULL,
 )
 Request URL: /PPE1483/js/webarena.js
 Stack Trace:
+<<<<<<< HEAD
 #0 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2015-03-25 15:10:27 Error: Fatal Error (1): Call to a member function generatePassword() on null in [/Users/CynthiaC/Sites/PPE1483/app/Controller/PpeController.php, line 89]
@@ -1969,12 +1986,20 @@ Stack Trace:
 #0 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2015-03-25 15:14:06 Error: [MissingControllerException] Controller class JsController could not be found.
+=======
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+nse))
+#1 {main}
+2015-03-25 14:59:05 Error: [MissingControllerException] Controller class JsController could not be found.
+>>>>>>> c1938d7adb163c68a949c96a183fb3989cc4ca33
 Exception Attributes: array (
   'class' => 'JsController',
   'plugin' => NULL,
 )
 Request URL: /PPE1483/js/facebook.js
 Stack Trace:
+<<<<<<< HEAD
 #0 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
 2015-03-25 15:14:06 Error: [MissingControllerException] Controller class DistController could not be found.
@@ -12766,3 +12791,37 @@ Stack Trace:
 #8 /Users/CynthiaC/Sites/PPE1483/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #9 /Users/CynthiaC/Sites/PPE1483/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+=======
+#0 C:\wamp\www\PPE1483\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-01 11:11:19 Error: Fatal Error (1): Unsupported operand types in [C:\wamp\www\PPE1483\app\View\Ppe\show_values.ctp, line 191]
+2015-04-01 11:11:19 Error: [FatalErrorException] Unsupported operand types
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191, Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191, Array)
+#3 C:\wamp\www\PPE1483\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-01 11:11:40 Error: Fatal Error (1): Unsupported operand types in [C:\wamp\www\PPE1483\app\View\Ppe\show_values.ctp, line 191]
+2015-04-01 11:11:40 Error: [FatalErrorException] Unsupported operand types
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191, Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191, Array)
+#3 C:\wamp\www\PPE1483\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-01 11:11:51 Error: Fatal Error (1): Unsupported operand types in [C:\wamp\www\PPE1483\app\View\Ppe\show_values.ctp, line 191]
+2015-04-01 11:11:51 Error: [FatalErrorException] Unsupported operand types
+Request URL: /PPE1483/Ppe/showValues
+Stack Trace:
+#0 C:\wamp\www\PPE1483\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191, Array)
+#2 C:\wamp\www\PPE1483\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', 'C:\\wamp\\www\\PPE...', 191, Array)
+#3 C:\wamp\www\PPE1483\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+>>>>>>> c1938d7adb163c68a949c96a183fb3989cc4ca33
